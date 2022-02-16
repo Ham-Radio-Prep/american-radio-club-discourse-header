@@ -1,0 +1,5 @@
+menu_items:
+  type: list
+  default: "Start Here!, #, blank|Online Courses, #, blank|Guides & Info, #, blank|Practice Tests, #, blank|Community Forum, #, blank|Shop, #, blank"
+  description:
+    en: "Add menu items. One item per line in this order: Text, url, title, target.<br>"
