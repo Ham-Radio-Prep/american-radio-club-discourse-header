@@ -16,7 +16,7 @@ export default apiInitializer("0.11.1", (api) => {
               {{header-topic-info attrs=attrs}}
             {{else}}
               <div class="tag-line">
-                <p>Hear on the air soon!</p>
+                <p>Hear you on the air soon!</p>
               </div>
             {{/if}}
             {{yield}}
