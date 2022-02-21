@@ -4,6 +4,7 @@ import { headerMenuItems } from "../widgets/american-radio-header-links";
 
 export default apiInitializer("0.11.1", (api) => {
   const site = api.container.lookup("site:main");
+  const currentUser = api.getCurrentUser();
 
   if (!site.mobileView) {
     api.reopenWidget("header-contents", {
@@ -28,7 +29,7 @@ export default apiInitializer("0.11.1", (api) => {
   }
 
   if (site.mobileView) {
-    const menu_items = headerMenuItems(settings.menu_items);
+    const menu_items = headerMenuItems(settings.menu_items, currentUser);
 
     menu_items.forEach((menuItem) => {
       api.decorateWidget("hamburger-menu:footerLinks", () => {
