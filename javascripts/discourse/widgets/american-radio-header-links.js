@@ -1,6 +1,5 @@
 import { createWidget } from "discourse/widgets/widget";
 import { h } from "virtual-dom";
-import { userPath } from "discourse/lib/url";
 
 export function headerMenuItems(data, currentUser) {
   return data.split("|").map((menuItem) => {
@@ -9,7 +8,7 @@ export function headerMenuItems(data, currentUser) {
     if (currentUser && menuItemData[0].trim() === "Start Here!") {
       return {
         text: "My Dashboard",
-        url: userPath(currentUser.username),
+        url: "https://americanradioclub.com/student-dashboard",
         target: menuItemData[2].trim() === "blank" ? "_blank" : "_self",
       };
     }
