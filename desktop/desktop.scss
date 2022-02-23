@@ -23,17 +23,12 @@
         padding-left: 2em;
       }
 
-      .d-header-icons {
-        position: absolute;
-        right: 0;
-      }
-
       .tag-line {
         padding-left: 2em;
         height: 100%;
         display: flex;
         align-items: center;
-        width: 50%;
+        width: 100%;
 
         p {
           color: #242424;
@@ -41,6 +36,16 @@
           font-size: $font-up-4;
           font-style: italic;
         }
+      }
+
+      .header-buttons {
+        span.d-button-label {
+          white-space: nowrap;
+        }
+      }
+
+      .d-header-icons {
+        display: flex;
       }
     }
 
