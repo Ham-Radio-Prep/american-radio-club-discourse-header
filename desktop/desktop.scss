@@ -32,10 +32,14 @@
 
         p {
           color: #242424;
-          font-weight: 900;
+          font-weight: bold;
           font-size: $font-up-4;
           font-style: italic;
         }
+      }
+
+      .extra-info-wrapper {
+        width: 100%;
       }
 
       .header-buttons {
