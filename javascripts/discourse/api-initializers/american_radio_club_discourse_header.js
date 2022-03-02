@@ -28,7 +28,7 @@ export default apiInitializer("0.11.1", (api) => {
     });
   }
 
-  if (site.mobileView) {
+  if (site.mobileView || $(window).width() < 1080) {
     const menu_items = headerMenuItems(settings.menu_items, currentUser);
 
     menu_items.forEach((menuItem) => {
