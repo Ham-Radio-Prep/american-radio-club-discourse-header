@@ -110,3 +110,21 @@ header.d-header.clearfix::before {
   height: 3em;
   width: 100%;
 }
+
+@media only screen and (max-width: 1079px) {
+  .d-header .header-right .header-links {
+    display: none;
+  }
+
+  header.d-header.clearfix::before {
+    display: none;
+  }
+
+  .d-header {
+    height: 7em;
+
+    #site-logo {
+      height: 5em;
+    }
+  }
+}
